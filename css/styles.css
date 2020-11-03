@@ -113,23 +113,54 @@ body {
     line-height: 1.14em;
     letter-spacing: 0.02em;
     color: var(--p-text-color);
-
 }
 
+.cont-mail::before {
+    display: inline-flex;
+    content:'';
+    height: 12px;
+    width: 16px;
+    background-image: url(../images/envelope.svg);
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cont-tel::before {
+    display: inline-flex;
+    content:'';
+    height: 16px;
+    width: 10px;
+    background-image: url(../images/smartphone.svg);
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ 
 .main-nav {
     display: flex;
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
     
-    
 }
 /* Основной контент */
 
 
 .hero {
+    display: inline-flex;
     text-align: center;
     background-color: var(--bg-color);
+    background-image:linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+     url(../images/hero.jpg);
+    width: 1600px;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .block {
@@ -225,6 +256,41 @@ body {
     color: var(--title-text-color);
     margin-top:  0;
     margin-bottom: 10px;
+}
+
+.img-features::before {
+    display: inline-flex;
+    content:'';
+    width: 270px;
+    height: 120px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.img-features:nth-child(1)::before  {
+    content:'';
+    background-image: url(../images/antenna\ 1.png);
+}
+
+.img-features:nth-child(2)::before  {
+    content:'';
+    background-image: url(../images/clock\ 1.png);
+}
+
+.img-features:nth-child(3)::before {
+    content:'';
+    background-image: url(../images/diagram\ 1.png);
+
+}
+
+
+.img-features:nth-child(4)::before  {
+    content:'';
+    background-image: url(../images/astronaut\ 1.png);
+    
 }
 
 
@@ -328,6 +394,33 @@ body {
 /* .text-job:last-child {
     margin-bottom: 0;
 } */
+
+/* .social {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social:nth-child(1) {
+    background-image: url(../images/instagram\ 2.png);
+}
+
+.social:nth-child(2) {
+    background-image: url(../images/twitter\ 1.png);
+} */
+
+.clients-bgc {
+    background-color: var(--white-color);
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 
 /* Страница портофолио */
 /* Основной контент */
@@ -486,4 +579,14 @@ body {
 /*  */
 .tel {
     margin-bottom: 0;
+}
+
+.join {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
 }
