@@ -115,27 +115,6 @@ body {
     color: var(--p-text-color);
 }
 
-.cont-mail::before {
-    display: inline-flex;
-    content:'';
-    height: 12px;
-    width: 16px;
-    background-image: url(../images/envelope.svg);
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.cont-tel::before {
-    display: inline-flex;
-    content:'';
-    height: 16px;
-    width: 10px;
-    background-image: url(../images/smartphone.svg);
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
  
 .main-nav {
     display: flex;
@@ -148,7 +127,7 @@ body {
 
 
 .hero {
-    display: inline-flex;
+    display: block;
     text-align: center;
     background-color: var(--bg-color);
     background-image:linear-gradient( to right,
@@ -259,42 +238,6 @@ body {
     margin-bottom: 10px;
 }
 
-.img-features::before {
-    display: inline-flex;
-    content:'';
-    width: 270px;
-    height: 120px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
-.img-features:nth-child(1)::before  {
-    content:'';
-    background-image: url(../images/antenna\ 1.png);
-}
-
-.img-features:nth-child(2)::before  {
-    content:'';
-    background-image: url(../images/clock\ 1.png);
-}
-
-.img-features:nth-child(3)::before {
-    content:'';
-    background-image: url(../images/diagram\ 1.png);
-
-}
-
-
-.img-features:nth-child(4)::before  {
-    content:'';
-    background-image: url(../images/astronaut\ 1.png);
-    
-}
-
-
 /* абзацы особенностей */
 .desc {
     font-family: Roboto;
@@ -378,7 +321,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* наша команда должность */
+/* наша командa-должность */
 
 .text-job {
     font-family: Roboto;
@@ -402,7 +345,40 @@ body {
     padding-bottom: 94px;
 }
 
+.clients-logo {
+    display: flex;
+}
 
+
+.icon-clients {
+    fill: currentColor;
+
+}
+
+.icon-link {
+    display: flex;
+    color: #AFB1B8;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    
+    justify-content: center;
+    align-items: center;
+}
+.icon-link:last-child {
+    margin-right: 0;
+}
+
+.icon-link:hover.icon-clients,
+.icon-link:focus.icon-clients {
+    color: var(--highlight-color);
+    border-color: var(--highlight-color);
+}
+
+.icon-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 /* Страница портофолио */
 /* Основной контент */
