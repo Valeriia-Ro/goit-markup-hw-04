@@ -26,8 +26,11 @@
            </nav>
            
             <ul class="list mailto-list">
-                <li class="item"><a class="link link-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"><a class="link link-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="item"><a class="link link-contacts" href="mailto:info@devstudio.com">
+                    <svg class="mail-svg" width="16" height="12"><use href="./images/sprite.svg#envelope"></use>
+                    </svg>info@devstudio.com</a></li>
+                <li class="item"><a class="link link-contacts" href="tel:+380961111111">
+                    <svg class="phone-svg" width="10" height="16"><use href="./images/sprite#smartphone"></use></svg>+38 096 111 11 11</a></li>
             </ul>
             
         </div>
@@ -112,7 +115,36 @@
                             <img class="team-ph" src="./images/igor.jpg" alt=" Портретное фото Игорь Демьяненко" width="270"/>
                             <h3 class="subtitle-names">Игорь Демьяненко</h3>
                             <p class="text-job">Product Designer</p>
-                           
+                           <ul class="list team-social">
+                               <li class="social-links-items">
+                                   <a class="link" href="">
+                                       <svg class="social-link-svg">
+                                           <use href="./images/sprite.svg#instagram"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-links-items">
+                                   <a class="link social-link" href="">
+                                       <svg class="social-link-svg">
+                                           <use href="./images/sprite.svg#twitter"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-links-items">
+                                   <a class="link social-link" href="">
+                                       <svg class="social-link-svg">
+                                           <use href="./images/sprite.svg#facebook"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="social-links-items">
+                                   <a class="link social-link" href="">
+                                       <svg class="social-link-svg">
+                                           <use href="./images/sprite.svg#linkedin"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                           </ul>
                         </li>
                         <li class="team-element">
                             <img class="team-ph" src="./images/olga.jpg" alt=" Портретное фото Ольга Репина" width="270"/>
@@ -171,23 +203,25 @@
     <!--Контакты-->
     <footer class="footer">
         <div class="content">
-            <div class="foot-content">
-                <a  class=" link logo-footer-sec" href="./index.html"><span class="logo-footer-first">Web</span>Studio</a>
-                <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="list">
-                    <li><a class="link foot-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="link foot-contacts tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </div>
-            <div class="join-us">
-                <h2 class="join">присоединяйтесь</h2>
-                <ul class="list">
-                    <li> <a href=""></a></li>
-                    <li> <a href=""></a></li>
-                    <li> <a href=""></a></li>
-                    <li> <a href=""></a></li>
-                </ul>
+            <div class="footer-content">
+                <div class="foot-content">
+                    <a  class=" link logo-footer-sec" href="./index.html"><span class="logo-footer-first">Web</span>Studio</a>
+                    <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="list">
+                        <li><a class="link foot-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="link foot-contacts tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </div>
+                <div class="join-us">
+                    <h2 class="subtitle join">присоединяйтесь</h2>
+                    <ul class="list social-footer">
+                        <li> <a href=""></a></li>
+                        <li> <a href=""></a></li>
+                        <li> <a href=""></a></li>
+                        <li> <a href=""></a></li>
+                    </ul>
 
+                </div>
             </div>
         </div>
     </footer>

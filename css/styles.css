@@ -4,6 +4,7 @@
     --highlight-color:#2196F3;
     --white-color:  #FFFFFF;
     --bg-color: #2F303A;
+    --svg-cl:#afb1b8;
 }
 
 body {
@@ -101,9 +102,9 @@ body {
 .mailto-list .item + .item {
     margin-left: 50px;
 }
-
-
-
+.mail-svg{
+    fill: var(--p-text-color);
+}
 /* контакты в наыигации */
 .link-contacts {
     font-family: Roboto;
@@ -293,6 +294,7 @@ body {
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white-color);
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .team-element:last-child {
@@ -333,7 +335,41 @@ body {
     color: var(--p-text-color);
     margin-top: 0;
     margin-bottom: 30px;
+}
 
+.team-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.social-link {
+    display: flex;
+    color: var(--svg-cl);
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--white-color); 
+    border-radius: 50%;
+    
+}
+
+.social-link-svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.social-link:hover.social-link-svg,
+.social-link:focus.social-link-svg {
+    fill: var(--white-color);
+    background-color: var(--highlight-color);    
 }
 
 .clients-bgc {
@@ -349,7 +385,6 @@ body {
     display: flex;
 }
 
-
 .icon-clients {
     fill: currentColor;
 
@@ -357,12 +392,11 @@ body {
 
 .icon-link {
     display: flex;
-    color: #AFB1B8;
+    color: var(--svg-cl);
     width: 170px;
     height: 90px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--svg-cl);
     border-radius: 4px;
-    
     justify-content: center;
     align-items: center;
 }
@@ -373,7 +407,8 @@ body {
 .icon-link:hover.icon-clients,
 .icon-link:focus.icon-clients {
     color: var(--highlight-color);
-    border-color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+    outline: none;
 }
 
 .icon-item:not(:last-child) {
@@ -382,8 +417,6 @@ body {
 
 /* Страница портофолио */
 /* Основной контент */
-
-
 
 .main-cont {
     margin-top: 94px;
@@ -552,4 +585,12 @@ body {
     line-height: 16px;
     letter-spacing: 0.03em;
     color: var(--white-color);
+}
+.join-us {
+    padding-top: 72px;
+    margin-left: 70px;
+}
+
+.footer-content {
+    display: inline-flex;
 }
