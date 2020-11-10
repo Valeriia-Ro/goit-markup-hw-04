@@ -385,13 +385,15 @@ body {
     fill: currentColor;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--highlight-color);
 }
 
-.social-link:hover.social-link-svg {
+.social-link:hover .social-link-svg,
+.social-link:focus .social-link-svg {
     fill: var(--white-color);
-   background-color: var(--highliting-color);
+    background-color: var(--highliting-color);
 }
 
 
@@ -427,11 +429,12 @@ body {
     margin-right: 0;
 }
 
-.icon-link:hover.icon-clients,
-.icon-link:focus.icon-clients {
+.icon-link:hover .icon-clients,
+.icon-link:focus .icon-clients {
     color: var(--highlight-color);
 }
-.icon-link:hover {
+.icon-link:hover,
+.icon-link:focus {
     border: 1px solid var(--highlight-color);
 }
 
@@ -648,7 +651,8 @@ body {
     fill: currentColor;
 }
 
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
     background: var(--highlight-color);
 }
 
