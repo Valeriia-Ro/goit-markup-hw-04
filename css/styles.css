@@ -388,10 +388,12 @@ body {
 .social-link:hover {
     background-color: var(--highlight-color);
 }
-/* ????????!!!!!! */
+
 .social-link:hover.social-link-svg {
     fill: var(--white-color);
+   background-color: var(--highliting-color);
 }
+
 
 .clients-bgc {
     background-color: var(--white-color);
@@ -554,7 +556,7 @@ body {
     line-height: 1.19em;
     letter-spacing: 0.03em;
     color: var(--white-color);
-    margin-bottom: 20px;
+    margin-bottom: 0;
     margin-top: 0;
 }
 
@@ -579,7 +581,7 @@ body {
     line-height: 1.71em;
     letter-spacing: 0.03em;
     color: var(--white-color);
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 9px;
 }
 
@@ -609,6 +611,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--white-color);
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .join-us {
     padding-top: 72px;
