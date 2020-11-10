@@ -36,7 +36,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    /* outline: 2px solid tomato; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -87,11 +86,16 @@ body {
 .mailto-list {
     display: flex;
     margin-left: auto;
+    align-items: center;
+}
+.item {
+    display: flex;
+    align-items: center;
 }
 
 .mailto-list .item + .item {
     margin-left: 50px;
-    justify-content: center;
+    display: flex;
     align-items: center;
 }
 .mail-svg {
@@ -114,6 +118,8 @@ body {
     line-height: 1.14em;
     letter-spacing: 0.02em;
     color: var(--p-text-color);
+    display: flex;
+    align-items: center;
 }
 
  
@@ -353,7 +359,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--p-text-color);
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .team-social {
